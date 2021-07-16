@@ -101,6 +101,7 @@ $box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 $box-shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .075);
 $box-shadow-lg: 0rem 0rem 2rem 0.3rem rgba(0, 0, 0, .7);
 $box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, .075);
+$enable-negative-margins: true;
 
 /*Root styles*/
 html, body {
@@ -177,16 +178,80 @@ input.search {
 .dropdown-toggle {
   background-color: #ce8dff !important;
   border-radius: 4px !important;
-  &::after {
-    margin-top: .75rem;
-    float: right;
+  &:hover {
+    color: white !important;
   }
 }
 .dropdown-item {
+  color: black !important;
+  background-color: white !important;
   &:hover, &:focus{
-    color: $primary !important;
-    background-color: inherit !important;
+    background-color: #ce8dff !important;
   }
 }
+
+/* loading animation */
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #C271FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Carousel slide */
+/*
+CC 2.0 License Iatek LLC 2018
+Attribution required
+
+*/
+
+#carouselExampleControls2 {
+  @media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+  }
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+      display: flex;
+  }
+
+  /* display 3 */
+  @media (min-width: 768px) {
+      
+      .carousel-inner .carousel-item-right.active,
+      .carousel-inner .carousel-item-next {
+        transform: translateX(33.333%);
+      }
+      
+      .carousel-inner .carousel-item-left.active, 
+      .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.333%);
+      }
+  }
+
+  .carousel-inner .carousel-item-right,
+  .carousel-inner .carousel-item-left{ 
+    transform: translateX(0);
+  }
+
+   
+}
+
 /* Bootstrap import */
 @import "node_modules/bootstrap/scss/bootstrap";

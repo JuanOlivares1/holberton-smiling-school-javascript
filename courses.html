@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>SmileSchool - Pricing</title>
+        <link rel="icon" href="images/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <section class="container-fluid section-hero-courses text-center" id="section-hero">
+            <header>
+                <nav class="navbar navbar-togglable-sm row pt-4 pb-3">
+                    <button class="navbar-toggler navbar-toggler-left d-sm-none col-1 mb-sm-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+                        aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation">
+                        <span height="36px" width="36px" class="holberton_school-icon-menu"></span>
+                    </button>
+                    <div class="navbar-brand d-flex justify-content-sm-space-between justify-content-center mx-0 col-10 col-sm-6 mb-0" >
+                        <a class="d-flex flex-column flex-sm-row" href="homepage.html">
+                            <img class="m-auto mx-sm-1 p-2" src="images/smile_off.png" height="50px" width="60px" alt="logo">
+                            <img class="m-auto mx-sm-1" src="images/logo.png" height="32px" width="120px" alt="SmileSchool">
+                        </a>
+                    </div>                        
+                    <ul class="navbar-nav flex-row justify-content-center inline-list d-none d-sm-flex col-6 font-weight-bold">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3 text-white active" href="courses.html">Courses <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3 text-white" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3 text-white" href="#">Login</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+                        <ul class="navbar-nav mx-auto my-5 font-weight-bold">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="courses.html">Courses <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <h2 class="font-weight-bold d-none d-sm-block pb-5 mb-0">« Don’t cry because it’s over.<br><span class="text-primary">Smile</span> because it happened. »</h2>
+        </section>
+        <section class="container-fluid section-filter bg-primary m-0 px-4 py-3 d-flex flex-row justify-content-center row">
+            <div class="col-12 col-md-4 col-xl-3 p-0 px-2 my-0">
+                <label for="search" class="font-weight-bold price">KEYWORDS</label>
+                <input type="search" class="form-control rounded search text-white" placeholder="Search by keywords" aria-label="Search"
+                aria-describedby="search-addon" id="search"/>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 dropdown p-0 px-2 my-0">
+                <label for="dd-menu1" class="font-weight-bold price">TOPIC</label>
+                <select class="w-100 dropdown-toggle text-left form-select text-white" role="menu" id="dd-menu1">
+                    <option class="dropdown-item" role="button">All</option>
+                    <option class="dropdown-item" role="button">Novice</option>
+                    <option class="dropdown-item" role="button">Intermediate</option>
+                    <option class="dropdown-item" role="button">Expert</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3 dropdown p-0 px-2 my-0">
+                <label for="dd-menu2" class="font-weight-bold price">SORT BY</label>
+                <select class="w-100 dropdown-toggle text-left form-select text-white" role="menu" id="dd-menu2">
+                    <option class="dropdown-item my-5" role="button">Most popular</option>
+                    <option class="dropdown-item my-5" role="button">Most recent</option>
+                    <option class="dropdown-item my-5" role="button">Most viewed</option>
+                </select>
+            </div>
+        </section>
+        <section class="container-fluid px-3 py-5 d-flex flex-column align-items-center">
+            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center row px-md-5" id="filter-videos">
+                <!-- Filter Videos -->
+                <div class="loader my-5 p-5" id="loader4"></div>
+            </div>
+        </section>
+        <footer class="bg-secondary p-4 text-center">
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pb-0 pb-sm-4 p-4">
+                <a class="d-flex" href="#">
+                    <img class="m-auto mx-sm-1 p-2" src="images/smile_off.png" height="50px" width="60px" alt="logo">
+                    <img class="m-auto mx-sm-1" src="images/logo.png" height="32px" width="120px" alt="SmileSchool">
+                </a>
+                <ul class="list-unstyled p-4 d-flex m-0">
+                    <li class="px-2"><span class="holberton_school-icon-ic_facebook"></span></li>
+                    <li class="px-2"><span class="holberton_school-icon-ic_twitter"></span></li>
+                    <li class="px-2"><span class="holberton_school-icon-ic_instagram"></span></li>
+                </ul>
+            </div>
+            <p class="text-muted font-weight-light">©smileschool 2020</p>            
+        </footer>
+    </body>
+</html>
